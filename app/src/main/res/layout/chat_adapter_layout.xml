@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/recevie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/receive_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/received_message_background"
+                android:padding="15dp"
+                android:text="Recevied message"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/received_messageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:text="10-12-2022  5:23pm"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sent_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/sent_message_background"
+                android:padding="15dp"
+                android:text="sent message"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/send_messageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:text="10-12-2022  5:23pm"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
